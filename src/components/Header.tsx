@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { Menu, X } from 'lucide-react'
-import Image from 'next/image'
+import Logo from '@/components/ui/Logo'
 import { createClient } from '@/lib/supabase-client'
 import type { User } from '@supabase/supabase-js'
 
@@ -54,7 +54,7 @@ export default function Header() {
       >
         <div className="container-wide h-16 sm:h-18 flex items-center justify-between">
           <Link href="/" className="flex items-center group">
-            <Image src="/logo.svg" alt="Airward International" width={180} height={50} className="transition-all duration-300 group-hover:scale-[1.02]" priority />
+            <Logo className="h-10 w-auto transition-all duration-300 group-hover:scale-[1.02]" dark={!scrolled} />
           </Link>
 
           <nav className="hidden md:flex items-center gap-1">

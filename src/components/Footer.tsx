@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import Image from 'next/image'
+import Logo from '@/components/ui/Logo'
 import { Mail, Phone, MapPin, ArrowUpRight } from 'lucide-react'
 
 export default function Footer() {
@@ -36,7 +36,7 @@ export default function Footer() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 lg:gap-8">
             <div className="lg:col-span-4">
               <Link href="/" className="flex items-center mb-6 group">
-                <Image src="/logo.svg" alt="Airward International" width={160} height={45} className="brightness-0 invert transition-all duration-300 group-hover:scale-[1.02]" />
+                <Logo className="h-10 w-auto transition-all duration-300 group-hover:scale-[1.02]" dark={false} />
               </Link>
               <p className="text-surface-400 text-sm leading-relaxed max-w-sm mb-6">
                 Founded by Arihant Jain &amp; Shweta Jain. Creating unforgettable travel experiences from Ahmedabad, India.
