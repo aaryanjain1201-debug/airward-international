@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
+  <defs>
+    <linearGradient id="wingGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a2540"/>
+      <stop offset="40%" stop-color="#0f3d6e"/>
+      <stop offset="100%" stop-color="#0d6ebd"/>
+    </linearGradient>
+    <linearGradient id="bodyGrad" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#0a2540"/>
+      <stop offset="100%" stop-color="#0f3d6e"/>
+    </linearGradient>
+  </defs>
+  <!-- Left wing (sweeping up) -->
+  <path d="M60 85 Q25 65 10 20 Q20 35 30 28 Q22 45 35 38 Q30 50 45 45 Q42 55 55 52 L60 85Z" fill="url(#wingGrad)"/>
+  <!-- Right wing (sweeping up) -->
+  <path d="M60 85 Q95 65 110 20 Q100 35 90 28 Q98 45 85 38 Q90 50 75 45 Q78 55 65 52 L60 85Z" fill="url(#wingGrad)"/>
+  <!-- Body center -->
+  <path d="M60 30 Q52 42 50 55 Q50 70 60 90 Q70 70 70 55 Q68 42 60 30Z" fill="url(#bodyGrad)"/>
+  <!-- Head -->
+  <circle cx="60" cy="28" r="7" fill="#0a2540"/>
+  <!-- Beak -->
+  <path d="M67 28 L78 30 L67 32Z" fill="#0d6ebd"/>
+  <!-- Eye -->
+  <circle cx="62" cy="26.5" r="1.8" fill="white"/>
+  <circle cx="62.5" cy="26.5" r="0.8" fill="#0a2540"/>
+</svg>

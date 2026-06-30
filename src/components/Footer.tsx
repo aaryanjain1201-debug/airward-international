@@ -1,5 +1,6 @@
 import Link from 'next/link'
-import { Plane, Mail, Phone, MapPin, ArrowUpRight } from 'lucide-react'
+import Image from 'next/image'
+import { Mail, Phone, MapPin, ArrowUpRight } from 'lucide-react'
 
 export default function Footer() {
   const links = {
@@ -35,9 +36,7 @@ export default function Footer() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 lg:gap-8">
             <div className="lg:col-span-4">
               <Link href="/" className="flex items-center gap-2.5 mb-6 group">
-                <div className="w-9 h-9 bg-brand-600 rounded-xl flex items-center justify-center group-hover:shadow-glow transition-shadow">
-                  <Plane className="w-4.5 h-4.5 text-white transform -rotate-45" />
-                </div>
+                <Image src="/logo-icon.svg" alt="Airward International" width={40} height={40} className="transition-all duration-300 group-hover:scale-105" />
                 <div className="flex flex-col">
                   <span className="text-lg font-bold text-white leading-tight tracking-tight">Airward</span>
                   <span className="text-[9px] font-semibold text-surface-400 uppercase tracking-[0.2em] leading-none">International</span>

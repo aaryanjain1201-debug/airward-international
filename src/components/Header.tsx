@@ -3,7 +3,8 @@
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { Plane, Menu, X, ChevronDown } from 'lucide-react'
+import { Menu, X } from 'lucide-react'
+import Image from 'next/image'
 import { createClient } from '@/lib/supabase-client'
 import type { User } from '@supabase/supabase-js'
 
@@ -53,9 +54,7 @@ export default function Header() {
       >
         <div className="container-wide h-16 sm:h-18 flex items-center justify-between">
           <Link href="/" className="flex items-center gap-2.5 group">
-            <div className="w-9 h-9 bg-brand-600 rounded-xl flex items-center justify-center shadow-glow transition-all duration-300 group-hover:shadow-glow-lg group-hover:scale-105">
-              <Plane className="w-4.5 h-4.5 text-white transform -rotate-45" />
-            </div>
+            <Image src="/logo-icon.svg" alt="Airward International" width={40} height={40} className="transition-all duration-300 group-hover:scale-105" />
             <div className="flex flex-col">
               <span className="text-lg font-bold text-surface-900 leading-tight tracking-tight">Airward</span>
               <span className="text-[9px] font-semibold text-surface-400 uppercase tracking-[0.2em] leading-none">International</span>
