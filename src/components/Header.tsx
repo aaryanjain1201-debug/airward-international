@@ -54,7 +54,7 @@ export default function Header() {
       >
         <div className="container-wide h-16 sm:h-18 flex items-center justify-between">
           <Link href="/" className="flex items-center group">
-            <Logo className="h-10 w-auto transition-all duration-300 group-hover:scale-[1.02]" dark={!scrolled} />
+            <Logo className="h-10 w-auto transition-all duration-300 group-hover:scale-[1.02]" dark={scrolled} />
           </Link>
 
           <nav className="hidden md:flex items-center gap-1">
