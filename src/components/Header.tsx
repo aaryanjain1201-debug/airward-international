@@ -53,12 +53,8 @@ export default function Header() {
         }`}
       >
         <div className="container-wide h-16 sm:h-18 flex items-center justify-between">
-          <Link href="/" className="flex items-center gap-2.5 group">
-            <Image src="/logo-icon.svg" alt="Airward International" width={40} height={40} className="transition-all duration-300 group-hover:scale-105" />
-            <div className="flex flex-col">
-              <span className="text-lg font-bold text-surface-900 leading-tight tracking-tight">Airward</span>
-              <span className="text-[9px] font-semibold text-surface-400 uppercase tracking-[0.2em] leading-none">International</span>
-            </div>
+          <Link href="/" className="flex items-center group">
+            <Image src="/logo.svg" alt="Airward International" width={180} height={50} className="transition-all duration-300 group-hover:scale-[1.02]" priority />
           </Link>
 
           <nav className="hidden md:flex items-center gap-1">

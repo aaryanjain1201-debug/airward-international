@@ -35,12 +35,8 @@ export default function Footer() {
         <div className="pt-20 sm:pt-28 pb-12">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 lg:gap-8">
             <div className="lg:col-span-4">
-              <Link href="/" className="flex items-center gap-2.5 mb-6 group">
-                <Image src="/logo-icon.svg" alt="Airward International" width={40} height={40} className="transition-all duration-300 group-hover:scale-105" />
-                <div className="flex flex-col">
-                  <span className="text-lg font-bold text-white leading-tight tracking-tight">Airward</span>
-                  <span className="text-[9px] font-semibold text-surface-400 uppercase tracking-[0.2em] leading-none">International</span>
-                </div>
+              <Link href="/" className="flex items-center mb-6 group">
+                <Image src="/logo.svg" alt="Airward International" width={160} height={45} className="brightness-0 invert transition-all duration-300 group-hover:scale-[1.02]" />
               </Link>
               <p className="text-surface-400 text-sm leading-relaxed max-w-sm mb-6">
                 Founded by Arihant Jain &amp; Shweta Jain. Creating unforgettable travel experiences from Ahmedabad, India.
